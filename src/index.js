@@ -5,7 +5,7 @@
  *
  * Розмітка картки задачі
  * <li class="task-list-item">
- *     <button class="task-list-item-btn">Удалить</button>
+ *     <button class="task-list-item-btn">Видалити</button>
  *     <h3>Заголовок</h3>
  *     <p>Текст</p>
  * </li>
@@ -14,3 +14,10 @@
  * прибрати завдання зі списку.
  * Список із завданнями має бути доступним після перезавантаження сторінки.
  */
+import { formSubmit } from './js/formSubmit.js';
+import { showCards } from './js/formSubmit.js';
+
+showCards();
+const form = document.querySelector('.header-form');
+
+form.addEventListener('submit', formSubmit);
